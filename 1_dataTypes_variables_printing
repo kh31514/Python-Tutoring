@@ -1,0 +1,1370 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPaaMuxoCp2dKE+kkPNJZqA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kh31514/Python-Tutoring/blob/main/1_dataTypes_variables_printing\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Data Types\n",
+        "\n",
+        "Data types are types of values\n",
+        "\n",
+        "\\\\\n",
+        "\n",
+        "Python has 4 basic data types:\n",
+        "\n",
+        "* Integers\n",
+        "* Floats\n",
+        "* Strings\n",
+        "* Booleans"
+      ],
+      "metadata": {
+        "id": "9yo__DKnsk5j"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Integers\n",
+        "\n",
+        "Integers are numbers without decimals. Integers can be both positive and negative.\n",
+        "\n",
+        "1, -3, 500000, 0 are all examples of integers."
+      ],
+      "metadata": {
+        "id": "kKLZ7nvat1-l"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Integer Operations\n",
+        "\n",
+        "Here are some operations we can perform on integers"
+      ],
+      "metadata": {
+        "id": "DkEtPB8g8hhI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "1 + 2  # addition\n",
+        "1 - 2  # subtraction\n",
+        "1 * 2  # multiplication\n",
+        "1 / 2  # float division (x ÷ y with decimal)\n",
+        "1 // 2  # integer division (x ÷ y without decimal, rounds down)\n",
+        "7 % 3  # modulus (remainder of x ÷ y)\n",
+        "2**3  # powers/exponents"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3AmCcFQX2h0i",
+        "outputId": "4176d547-8950-4e80-d0a6-eda704d4fd02"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "8"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Floats\n",
+        "\n",
+        "Floats are numbers with decimals. Floats can be both positive and negative.\n",
+        "\n",
+        "1.0, 3.1415, 0.1234 are all examples of floats.\n"
+      ],
+      "metadata": {
+        "id": "G5DGpSGIt7NU"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Float Operations\n",
+        "\n",
+        "We can perform the same operations on integers and floats!"
+      ],
+      "metadata": {
+        "id": "16iC1ogr8m4B"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "1.0 + 2.0  # addition\n",
+        "1.0 - 2.0  # subtraction\n",
+        "1.0 * 2.0  # multiplication\n",
+        "1.0 / 2.0  # float division (x ÷ y with decimal)\n",
+        "1.0 // 2.0  # integer division (x ÷ y rounds down)\n",
+        "1.0 % 2.0  # modulus (remainder of x ÷ y)\n",
+        "2.0**3.0  # powers/exponents"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VVLbX_Jo3d8q",
+        "outputId": "e9a1bc72-b3ad-439b-fc6a-47bf4fd32d46"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "8.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Think 🤔\n",
+        "\n",
+        "When might we want to use integers? When might we want to use floats?\n",
+        "\n",
+        "Would you use an integer or a float to measure the following things?\n",
+        "* Number of pets you have\n",
+        "* Cups of chocolate chips you need for a recipe\n",
+        "* Shoe size\n",
+        "* Number of stuffed animals you own\n",
+        "* Age\n",
+        "\n",
+        "What happens when you add an integer and a float together? What data type is the result? What about other operations?"
+      ],
+      "metadata": {
+        "id": "YExVbrJJzmbJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "1 * 2.0"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qr1kuKeZ4wJf",
+        "outputId": "ac576fe7-2b00-44d6-a057-cdc16dac1fdf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Strings\n",
+        "\n",
+        "Strings are words. In Python we encolse strings in 'single quotes' or \"double quotes\""
+      ],
+      "metadata": {
+        "id": "RNrlvlrat_vF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"This is an example of a string\"\n",
+        "'Hello world!'"
+      ],
+      "metadata": {
+        "id": "s0LmACYVvcro"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Emojis can be strings too!"
+      ],
+      "metadata": {
+        "id": "BwqKx-BL15h6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"😃 I'm a string too! 😃\""
+      ],
+      "metadata": {
+        "id": "IjXQQiuW1_KK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## String Operations\n",
+        "\n",
+        "We can smush strings together through an operation called concatenation. The syntax for concatenation is the + symbol."
+      ],
+      "metadata": {
+        "id": "XsRzV6iH5S3F"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"Hello \" + \"world!\""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "-7zVpvKT5efW",
+        "outputId": "321f33a7-8f5c-42ae-8017-146d8c4bac80"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Hello world!'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We can only concatenate strings with other strings. The following code will produce an error 😵‍💫"
+      ],
+      "metadata": {
+        "id": "ZZCtjNqh0W39"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"I am \" + 20 + \"years old\""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 166
+        },
+        "id": "5_LGtbmY0oZy",
+        "outputId": "a01ff453-39b9-4df6-b907-6f5663ce0659"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-1-0b298f0bedfb>\u001b[0m in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0;34m\"I am \"\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m20\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;34m\"years old\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: can only concatenate str (not \"int\") to str"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Booleans\n",
+        "\n",
+        "A boolean has two possible values: `True` and `False`. Note that `True` and `False` are both capitalized. This is important!"
+      ],
+      "metadata": {
+        "id": "a5Ugqo08uGa_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Boolean Operations\n",
+        "\n",
+        "Booleans have three main operations: and, or, not.\n",
+        "\n",
+        "Below is what we call a truth table:\n",
+        "\n",
+        "![picture](https://qph.cf2.quoracdn.net/main-qimg-bc8139bb7744e28bd6a2512156cc3520)\n",
+        "\n",
+        "Booleans and truth tables can be a little confusing, so let's walk through an example in English.\n",
+        "\n",
+        "<blockquote>\n",
+        "\n",
+        "Let A be the statement my eyes are blue (true).\n",
+        "\n",
+        "Let B be the statment my hair is blonde (false).\n",
+        "\n",
+        "Is it true that my eyes are blue *and* my hair is blonde?\n",
+        "\n",
+        "Is it true that my eyes are blue *or* my hair is blonde?\n",
+        "\n",
+        "</blockquote>"
+      ],
+      "metadata": {
+        "id": "qpund9QO8sZ1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "True and False\n",
+        "True or False"
+      ],
+      "metadata": {
+        "id": "XB3V89EmvdMv",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d49c20a2-c7b6-408a-c27a-0b5af3be3c38"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Checking Types\n",
+        "\n",
+        "If we're ever unsure about the type of a value, we can use the following trick.\n"
+      ],
+      "metadata": {
+        "id": "FRbcQ8kdux_I"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(1.0)\n",
+        "type(2)\n",
+        "type(\"hello\")\n",
+        "type(True)"
+      ],
+      "metadata": {
+        "id": "tomr6lHSuz5f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "188efb52-f79e-482b-d558-0fb7156b9352"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "float"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "`str` is short for string, `int` is short for integer, and `bool` is short for boolean."
+      ],
+      "metadata": {
+        "id": "rI-rLdlT9Oqo"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Converting Between Data Types\n",
+        "\n",
+        "What if I have the string `\"2\"` but I want to use it like an integer?"
+      ],
+      "metadata": {
+        "id": "QX8juEOfuNqz"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## String Conversion"
+      ],
+      "metadata": {
+        "id": "xpIQs3iV2wZH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str(True)\n",
+        "str(2)\n",
+        "str(2.0)"
+      ],
+      "metadata": {
+        "id": "JbbbLCvFvejO",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "069dfed4-875e-4e6c-b6a6-db4d77499b0e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'2.0'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Integer Conversion\n",
+        "\n",
+        "The integer representation of `True` is 1.\n",
+        "\n",
+        "The integer representation of `False` is 0."
+      ],
+      "metadata": {
+        "id": "gEEydeaH26h2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "int(True)\n",
+        "int(2.0)\n",
+        "int(\"2\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "re5rKXve3Xef",
+        "outputId": "cb38b8ad-6432-492f-8b6e-d88c7a650fb1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "12"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Strings must be a valid integer.\n",
+        "\n",
+        "The following conversions will produce errors 😵‍💫"
+      ],
+      "metadata": {
+        "id": "GzvkHsK53oUk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "int(\"hello\")\n",
+        "int(\"True\")\n",
+        "int(\"1.0\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 201
+        },
+        "id": "oGnBXssr4HIY",
+        "outputId": "dac89040-4a7e-4b33-e1b4-d1a764e718a2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-27-261e9d4f4061>\u001b[0m in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"hello\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"True\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"1.0\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mValueError\u001b[0m: invalid literal for int() with base 10: 'hello'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Float Conversion\n",
+        "\n",
+        "The float representation of `True` is 1.0.\n",
+        "\n",
+        "The float representation of `False` is 0.0."
+      ],
+      "metadata": {
+        "id": "0O7VTX-d2Pxw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "float(True)\n",
+        "float(2)\n",
+        "float(\"2\")\n",
+        "float(\"2.0\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MlO_zDgz4jEY",
+        "outputId": "619c0ea9-2ea6-4019-bb46-8cf208679c48"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Boolean Conversion\n",
+        "\n",
+        "All non-zero integers and floats are converted to `True`.\n",
+        "\n",
+        "All non-empty strings are converted to `True`.\n"
+      ],
+      "metadata": {
+        "id": "YG3J4Jaq4yfz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bool(2)\n",
+        "bool(2.0)\n",
+        "bool(\"\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0RJt0eQ-5FLm",
+        "outputId": "62ccdbad-2f5a-4b96-ae2e-5a8299546de9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Printing\n",
+        "\n",
+        "Printing is super easy in Python. Just use the following syntax (for any data type)."
+      ],
+      "metadata": {
+        "id": "PUtnMj94vDpD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello world\")\n",
+        "print(1)\n",
+        "print(-0.12345)\n",
+        "print(True)"
+      ],
+      "metadata": {
+        "id": "H0ejwcQGvfG-",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "28a9cca0-941e-4d84-bb55-aa60852c9ec2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello world\n",
+            "1\n",
+            "-0.12345\n",
+            "True\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "If we want to print multiple things on the same line, we can separate them with a comma. The comma automatically adds a space between items."
+      ],
+      "metadata": {
+        "id": "gCgLKFc83GUu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello world\", 1, -0.12345, True)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xkkjywoC3N4e",
+        "outputId": "e8587841-87db-427b-a8f1-aaf8f45457c5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello world 1 -0.12345 True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Comments\n",
+        "\n",
+        "Code is much easier to read when we add English explanations.\n",
+        "\n",
+        "We can add single line comments using the `#` symbol.\n",
+        "\n",
+        "We can add multi-line comments using `'''` before and after our block of text."
+      ],
+      "metadata": {
+        "id": "jLseOysv1Eyb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# This is a single line comment\n",
+        "\n",
+        "'''\n",
+        "This is a multi-line comment.\n",
+        "Look how I can continue writing here.\n",
+        "'''"
+      ],
+      "metadata": {
+        "id": "6XSttX3J6JBt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "On PC, you can use the keys Ctrl + / to quickly add single line comments."
+      ],
+      "metadata": {
+        "id": "CINS38HW6Ym8"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Variables\n",
+        "\n",
+        "We can store and re-use our data by using variables.\n",
+        "\n",
+        "We use the `=` symbol to indicate assignment. `=` in coding has a different meaning than `=` in math❗\n",
+        "\n",
+        "We put our variable name on the left side of the `=` and our data that we want to store on the right side. See below."
+      ],
+      "metadata": {
+        "id": "4Tk4cE02uToX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 10\n",
+        "favColor = \"blue\"\n",
+        "happy = True"
+      ],
+      "metadata": {
+        "id": "wAUlLexEvfnb"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Now we can use our variable name instead of the data itself."
+      ],
+      "metadata": {
+        "id": "TwEZTFrz8JxN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"I am \" + str(age) + \" years old\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f5DclQik8V_w",
+        "outputId": "0576c74a-425b-4a84-8f2d-cd4a4626686a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I am 10 years old\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Variable Names\n",
+        "\n",
+        "Variable names can include any letters, any numbers, and the underscore character (`_`).\n",
+        "\n",
+        "Variables cannot begin with numbers (`1var` is an invalid name).\n",
+        "\n",
+        "Variable names are case-sensitive (`age`, `Age` and `AGE` are three different variables)\n",
+        "\n",
+        "In Python, we usually use `camelCase` or `snake_case` to make variable names easy to read.\n"
+      ],
+      "metadata": {
+        "id": "A4bz0S0s8hme"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Think 🤔\n",
+        "\n",
+        "Which of the following are good variable names? What kind of data does each variable store?"
+      ],
+      "metadata": {
+        "id": "24G7HLtZ9rCO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "favanimal = 'dog'\n",
+        "favAnimal2 = \"cat\"\n",
+        "3_fav_animal = \"bunny\"\n",
+        "\n",
+        "num = 12\n",
+        "shoeSize = 7.5\n",
+        "athletic = True\n",
+        "_tall = \"False\""
+      ],
+      "metadata": {
+        "id": "RfgLjdD096lc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Practice 👨‍💻\n",
+        "\n",
+        "1.   Make a variable to store your first name.\n",
+        "2.   Make another variable to store the number of pets you have.\n",
+        "3.   Use type convertion and concatenation to print the following sentence: `Hi my name is ___, and I have ___ pets`.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "GtfUWQHn_WlD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write your code below (Oscar)\n",
+        "\n",
+        "name = \"Oscar\"\n",
+        "pets = 1\n",
+        "print('hi my name is', name, 'and i have', pets, 'pet')"
+      ],
+      "metadata": {
+        "id": "pkb_D1whAlwy",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "07ff9b95-fc8a-4402-e58c-7cef1eff7bd8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hi my name is Oscar and i have 1 pet\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write your code below (Madeleine)\n",
+        "\n",
+        "name= \"Madeleine\"\n",
+        "pets= 1\n",
+        "# print(type(int(pets)))\n",
+        "# print(\"and I have \" + int(pets))\n",
+        "print(\"My name is \" + str(name) + \" and I have \" + str(pets) + \" pet\" )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Y-aAd0ukoUJ0",
+        "outputId": "cc7908e2-7cf9-4905-dd91-c0e5312fd312"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My name is Madeleine and I have 1 pet\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Updating Variables\n",
+        "\n",
+        "Ages change over time. Luckily we can update our variable to reflect that!"
+      ],
+      "metadata": {
+        "id": "18JjE_-qHAmB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 20\n",
+        "age = age + 1\n",
+        "\n",
+        "print(age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MteGQ4UvI08y",
+        "outputId": "75718394-3c82-4e63-844f-e85e98e88d6c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We evaluate the right hand side first, and then store the new value in the variable.\n",
+        "\n",
+        "Let's see a few more examples."
+      ],
+      "metadata": {
+        "id": "Pum8OhacJF9f"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var = \"hello\"\n",
+        "var = var + \" world\"\n",
+        "print(var)\n",
+        "\n",
+        "num = 1.0\n",
+        "num = num / 2.0\n",
+        "print(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H4Q2CnvOJUZ_",
+        "outputId": "103c0354-3bcb-481d-82a1-1f918931addd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello world\n",
+            "0.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We can also use these shorcuts!"
+      ],
+      "metadata": {
+        "id": "88MLH_csKJXl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var1 = \"hello\"\n",
+        "var1 = var1 + \" world\"\n",
+        "# is the same as\n",
+        "var2 = \"hello\"\n",
+        "var2 += \" world\"\n",
+        "\n",
+        "num1 = 1.0\n",
+        "num1 = num1 / 2.0\n",
+        "# is the same as\n",
+        "num2 = 1.0\n",
+        "num2 /= 2.0"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2spVxkdpKYmk",
+        "outputId": "28e2da55-bff6-4da8-a133-a2471c50b1be"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# User Input\n",
+        "\n",
+        "Code is much more interesting when we can interact with the user.\n",
+        "\n",
+        "For example, my age is not the same as your age; My name is not the same as your name.\n",
+        "\n",
+        "Here's how we can get and store user input."
+      ],
+      "metadata": {
+        "id": "4G__mC7SvXZq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"What is your name?\\n\")\n",
+        "print(\"Hi \" + name + \"!\")"
+      ],
+      "metadata": {
+        "id": "2y3HH7SivgFW",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5fb75b94-e6a9-4d25-9ca4-ac389aff542e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your name?\n",
+            "iuyvkghj\n",
+            "Hi iuyvkghj!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Note the `\\n` characters after `\"What is your name?\"`.\n",
+        "\n",
+        "`\\n` is called a newline character. It isn't necessary, but it makes our interface look much cleaner.\n",
+        "\n",
+        "Here's what it looks like without the newline character:\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "mA_6ZVWtGE6C"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"What is your name?\")\n",
+        "print(\"Hi \" + name + \"!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lbghKC9mGh4C",
+        "outputId": "7aed7eef-014f-4f0d-ce1f-4ba78fcf3ea9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your name?iytuvuyg\n",
+            "Hi iytuvuyg!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "You can also use `\\t` which stands for tab. It is useful for indentation."
+      ],
+      "metadata": {
+        "id": "blrouYU0Gqo8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"What is your name?\\t\")\n",
+        "print(\"Hi \" + name + \"!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bFRTqZpMG5wf",
+        "outputId": "82273cf6-09b0-4784-b1d6-db1e0c6997d4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your name?\tjh bm,ng \n",
+            "Hi jh bm,ng !\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "❗User input is always a string❗\n",
+        "\n",
+        "If we want to store/use a different data type (integer, float, or boolean), we'll first have to use data type conversion from earlier."
+      ],
+      "metadata": {
+        "id": "rrI9Ek-qDX3y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hoursWorked = input(\"How many hours did you work today?\\n\")\n",
+        "hourlyRate = input(\"How much money (in dollars) do you earn per hour?\\n\")\n",
+        "\n",
+        "earnings = float(hoursWorked) * float(hourlyRate)\n",
+        "\n",
+        "print(\"Congrats! You earned\", earnings, \"dollars today.\")\n",
+        "# You could also print the same statment this way\n",
+        "# print(\"Congrats! You earned \" + str(earnings) + \" dollars today.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0sLaHbMYDfnT",
+        "outputId": "e32f5c76-131a-4463-9343-4cedebdd77e6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "How many hours did you work today?\n",
+            "5\n",
+            "How much money (in dollars) do you earn per hour?\n",
+            "15.5\n",
+            "Congrats! You earned 77.5 dollars today.\n",
+            "Congrats! You earned 77.5 dollars today.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Practice 👨‍💻\n",
+        "\n",
+        "1.   Ask the user for their favorite number.\n",
+        "2.   Add 5 to the number.\n",
+        "3.   Print the increased number to the screen (optionally with a short message).\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "57GvKt239cnJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Write your code below\n",
+        "\n",
+        "number = input(\"What is your favorite number?\\n\")\n",
+        "number = int(number)\n",
+        "number = number + 5\n",
+        "print(\"your favorite number plus 5 is \" + str(number))"
+      ],
+      "metadata": {
+        "id": "1e3nMZsq-Q3X"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Bonus: String Interpolation 🤩\n",
+        "\n",
+        "Sometimes we want to include non-string data in a sentence.\n",
+        "\n",
+        "For example, maybe we want to print the string \"I am 5 feet tall and 7 inches\" but 5 and 7 are integers stored in variables.\n",
+        "\n",
+        "We could convert the integers to strings and use concatenation, or we could also use string interpolation."
+      ],
+      "metadata": {
+        "id": "OkNj3IcZuexw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "W-N2JHoysgMI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "cd84bdac-d417-4737-b96c-383232e0fa40"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I am 5 feet tall and 7 inches\n"
+          ]
+        }
+      ],
+      "source": [
+        "feet = 5\n",
+        "inches = 7\n",
+        "print(\"I am %i feet tall and %i inches\" % (feet, inches))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We use `%i` as a placeholder to represent our integer and we specify what integer we want to use after the string.\n",
+        "\n",
+        "We can also use `%f` as a placeholder for floats and `%s` for strings and booleans."
+      ],
+      "metadata": {
+        "id": "b3g83Rqy4z00"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"Katie\"\n",
+        "print(\"Hello! My name is %s :)\" % name)\n",
+        "\n",
+        "blueEyes = True\n",
+        "print(\"It is %s that %s has blue eyes\" % (blueEyes, name))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "L5E1vg_D5a4D",
+        "outputId": "657e0d14-dd4e-4f0e-cde8-107b11e1ff4b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello! My name is Katie :)\n",
+            "It is True that Katie has blue eyes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Practice 👨‍💻\n",
+        "\n",
+        "Revisit the last practice, but incorporate string interpolation."
+      ],
+      "metadata": {
+        "id": "c0rlmzGu--tT"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Review 💪\n",
+        "\n",
+        "Phew that was a lot of information. Here's what you should takeaway.\n",
+        "\n",
+        "*   What are the 4 basic data types?\n",
+        "*   What operations can I use on each data type?\n",
+        "*   How can I convert between different data types?\n",
+        "*   How can I print information?\n",
+        "*   How can I store and re-use pieces of data?\n",
+        "*   How can I update variables?\n",
+        "*   How can I gather user input?"
+      ],
+      "metadata": {
+        "id": "GuUVTAGBHOBM"
+      }
+    }
+  ]
+}
